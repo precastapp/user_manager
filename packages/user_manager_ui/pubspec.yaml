@@ -1,0 +1,32 @@
+name: user_manager
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  user_manager_domain:
+    git:
+     url: https://github.com/precastapp/user_manager.git
+     path: packages/user_manager_domain
+     ref: main
+  core_ui:
+    git: 
+      url: https://github.com/precastapp/core_module.git
+      path: packages/core_ui
+      ref: main
+  cached_network_image:
+  oauth2: ^2.0.0
+  webview_flutter: ^3.0.4
+  webview_flutter_web: ^0.1.0+4
+  webview_windows: ^0.2.1
+  jwt_decoder: ^2.0.1
+  get_storage:
+  url_launcher: ^6.1.6
+  get:
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.16.0

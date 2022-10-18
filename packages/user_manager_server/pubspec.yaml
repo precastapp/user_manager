@@ -1,0 +1,27 @@
+name: user_manager_server
+description: A server app using the shelf package and Docker.
+version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  http: ^0.13.0
+  args: ^2.0.0
+  shelf: ^1.1.0
+  shelf_router: ^1.0.0
+  core_server:
+    git:
+      url: https://github.com/precastapp/core_module.git
+      path: packages/core_server
+      ref: main
+  user_manager_domain:
+    git:
+      url: https://github.com/precastapp/user_manager.git
+      path: packages/user_manager_domain
+      ref: main
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.15.0

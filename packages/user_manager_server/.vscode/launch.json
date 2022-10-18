@@ -1,0 +1,19 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "service",
+            "request": "launch",
+            "type": "dart",
+            "program": "bin/server.dart",
+            "env": {
+                "RSA_PUBLIC_KEY_URL": "https://rtabet.us.auth0.com/pem",
+                "AUTH0_ID": "Gk6obCwG9A3fIVfN2S4gnfELXG0fguZs",
+                "AUTH0_SECRET": "pQ6bcP_b_xEcuy7eCjGgnQi_rgpb3VcvznTJdo_HgRSKCR8YdjcOMQ8vfDU6asmV"
+            }
+        }
+    ]
+}
